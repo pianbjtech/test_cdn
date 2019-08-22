@@ -19,7 +19,7 @@ document.getElementsByTagName("head")[0].appendChild(fileref);
 var fileref1=document.createElement("link");
 fileref1.setAttribute("rel", "stylesheet");
 fileref1.setAttribute("type", "text/css");
-fileref1.setAttribute("href", "https://raw.githubusercontent.com/pianbjtech/test_cdn/master/webwidget.css");
+fileref1.setAttribute("href", "https://cdn.jsdelivr.net/gh/pianbjtech/test_cdn@master/webwidget.css");
 document.getElementsByTagName("head")[0].appendChild(fileref1);
 
 
