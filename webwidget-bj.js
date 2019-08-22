@@ -2,7 +2,7 @@ if(typeof jQuery=='undefined') {
     var headTag = document.getElementsByTagName("head")[0];
     var jqTag = document.createElement('script');
     jqTag.type = 'text/javascript';
-    jqTag.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';
+    jqTag.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';
     jqTag.onload = myJQueryCode;
     headTag.appendChild(jqTag);
 } else {
@@ -19,7 +19,7 @@ document.getElementsByTagName("head")[0].appendChild(fileref);
 var fileref1=document.createElement("link");
 fileref1.setAttribute("rel", "stylesheet");
 fileref1.setAttribute("type", "text/css");
-fileref1.setAttribute("href", "../css/webwidget.css");
+fileref1.setAttribute("href", "https://raw.githubusercontent.com/pianbjtech/test_cdn/master/webwidget.css");
 document.getElementsByTagName("head")[0].appendChild(fileref1);
 
 
@@ -76,7 +76,7 @@ function myJQueryCode() {
 								'<div id="result_div" class="resultDiv">'+
 								'</div>'+
 								'<div class="chatForm" id="chat-div">'+
-								'<div class="powered-widget"><img src="../img/powered-widget.png"></div>'+
+								'<div class="powered-widget"><img src="https://raw.githubusercontent.com/pianbjtech/test_cdn/master/powered-widget.png"></div>'+
 									'<div class="spinner">'+
 										'<div class="bounce1"></div>'+
 										'<div class="bounce2"></div>'+
@@ -92,7 +92,7 @@ function myJQueryCode() {
 							'<div class="profile_div">'+
 								'<div class="row">'+
 									'<div class="col-hgt">'+
-										'<img src="../img/balesin-logo-widget.png" style="width: 85px;">'+
+										'<img src="https://raw.githubusercontent.com/pianbjtech/test_cdn/master/balesin-logo-widget.png" style="width: 85px;">'+
 									'</div><!--col-hgt end-->'+
 									// '<div class="col-hgt">'+
 									// 	'<div class="chat-txt">'+

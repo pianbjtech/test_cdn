@@ -67,7 +67,7 @@ mybot .chatCont {
   border: 1px solid #dcdcdc;
   bottom: 65px;
   right: 0;
-  background: #fff url(../img/balesin-watermark.png) no-repeat;
+  background: #fff url("https://raw.githubusercontent.com/pianbjtech/test_cdn/master/balesin-watermark.png") no-repeat;
   background-size: contain;
   border-top-left-radius: 3px;
   z-index: 10000;
