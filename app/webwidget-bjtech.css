@@ -1,0 +1,478 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Satisfy);
+
+widgetbalesin{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+widgetbalesin img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -khtml-user-drag: none;
+}
+
+widgetbalesin a,
+widgetbalesin a:hover,
+widgetbalesin a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+widgetbalesin .width100 {
+  width: 100%;
+}
+
+widgetbalesin .text-center {
+  text-align: center;
+}
+
+widgetbalesin .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+widgetbalesin .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* General end*/
+
+/* widgetbalesin */
+widgetbalesin.center .chatCont,
+widgetbalesin.center .profile_div {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+widgetbalesin.left .chatCont,
+widgetbalesin.left .profile_div {
+  left: 0;
+}
+
+widgetbalesin .chatCont {
+  position: fixed;
+  width: 400px;
+  height: 500px !important;
+  border: 1px solid #dcdcdc;
+  bottom: 65px;
+  right: 0;
+  background: #fff url(../img/balesin-watermark.png) no-repeat;
+  background-size: contain;
+  border-top-left-radius: 3px;
+  z-index: 10000;
+  display: none;
+  background-position: center bottom;
+}
+
+widgetbalesin .close {
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  top: 12px;
+  box-shadow: 0 0 0 #333;
+}
+
+widgetbalesin .bot_profile {
+  /* background: #ffdd00; */
+  text-align: left;
+  width: 100%;
+  display: none;
+  z-index: 1000;
+  max-height: 60px;
+  box-shadow: 0 4px 15px -8px rgba(0,0,0,0.3);
+  border-bottom: 1px solid #ccc;
+  background: #feb645;
+  background: -moz-linear-gradient(-45deg, #feb645 0%, #f1e767 100%);
+  background: -webkit-linear-gradient(-45deg, #feb645 0%,#f1e767 100%);
+  background: linear-gradient(135deg, #feb645 0%,#f1e767 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb645', endColorstr='#f1e767',GradientType=1 );
+  
+}
+
+widgetbalesin .bot_profile .bot_name{
+  display: flex;
+  padding: 10px;
+  min-height: 50px;
+  justify-content: space-between;
+}
+
+widgetbalesin .bot_profile .bot_name .nametop{
+  font-size: 18px !important;
+  position: relative !important;
+  bottom: 15px !important;
+  text-transform: uppercase !important;
+  vertical-align: middle !important;
+  font-family: 'Open Sans';
+  color: #333;
+  top: 8px;
+  font-weight: bold;
+  margin: 0;
+}
+
+widgetbalesin .bot_p_img {
+  border-radius: 50%;
+  width: 40px;
+  border-radius: 50%;
+  background: #fff;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+widgetbalesin .chatForm {
+  position: absolute;
+  bottom: -65px;
+  right: -1px;
+  margin-bottom: 0;
+  width: 100%;
+  display: none;
+  border: 1px solid #dcdcdc;
+}
+
+widgetbalesin .bot-txt,
+widgetbalesin .bot-txt:focus {
+  box-shadow: none;
+  border-radius: 0;
+  height: 66px;
+  border: 0;
+}
+
+widgetbalesin .resultDiv .botResult {
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 0px;
+  max-width: 65%;
+  text-align: justify;
+}
+
+
+widgetbalesin .right-msg {
+  flex-direction: row-reverse;
+}
+
+widgetbalesin .msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+widgetbalesin .msg-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.1);
+}
+
+widgetbalesin .msger-inputarea {
+  display: flex;
+  background: rgb(255, 255, 255);
+}
+
+widgetbalesin .msger-send-btn {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.23s;
+  background-color: white;
+  border: 0;
+}
+
+widgetbalesin .right-msg .msg-img {
+  margin: 0 0 0 10px;
+}
+
+widgetbalesin .right-msg .msg-bubble {
+  background: var(--right-msg-bg);
+  color: rgb(0, 0, 0);
+  border-bottom-right-radius: 0;
+  background-color: #ffdd00;
+  border: 0px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.1);
+  text-align: justify;
+}
+
+widgetbalesin .msg-bubble {
+  max-width: 65%;
+  padding: 15px;
+  border-radius: 15px;
+  background: var(--left-msg-bg);
+  background-color: white;
+  border: 0.5px solid gray;
+}
+
+widgetbalesin .resultDiv .userEnteredText {
+  background: #ffdd00;
+  float: right;
+  color: #333;
+  border-radius: 15px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.1);
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  word-wrap: break-word;
+  border-bottom-right-radius: 0px;
+  max-width: 65%;
+}
+
+
+widgetbalesin .profile_div {
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+widgetbalesin .img-profile {
+  width: 65px;
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.16), 0 0px 10px 0 rgba(0,0,0,0.12);
+  background: white;
+  border-radius: 50px;
+}
+
+widgetbalesin .col-hgt {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 10px;
+}
+
+widgetbalesin .chat-txt {
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.16),0 0px 10px 0 rgba(0,0,0,0.12);
+  padding: 15px 15px;
+  border-radius: 50px;
+}
+
+widgetbalesin .powered-widget{
+  top: -25px;
+  margin: 0 auto;
+  height: 30px;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/* Spinner start */
+widgetbalesin .spinner {
+  background: #fff;
+  width: 70px;
+  text-align: center;
+  display: none;
+  border-radius: 15px;
+  position: absolute;
+  top: -35px;
+  left: 19px;
+  padding: 7px 10px;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.1);
+}
+
+widgetbalesin .spinner > div {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  margin-right: 5px;
+}
+
+widgetbalesin .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+widgetbalesin .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+/* Spinner End */
+
+
+/* Suggestions */
+widgetbalesin .suggestion {
+  background: #fff;
+  color: #000;
+  border-radius: 3px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 400px;
+  float: left;
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.16), 0 0px 10px 0 rgba(0,0,0,0.12);
+  margin-left: 5px;
+  border-top-left-radius: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+widgetbalesin .botResponses{
+  display: flex;
+  align-items: flex-end;
+}
+
+widgetbalesin .rightResponse{
+  flex-direction: row-reverse;
+}
+
+widgetbalesin .botResponses .botImg{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #ddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+widgetbalesin .suggestion:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0);
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
+  border-right: 15px solid #fff;
+  left: -15px;
+  margin-top: -12px;
+}
+
+widgetbalesin .botresponses .msg-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+widgetbalesin .msg-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+widgetbalesin .msg-info {
+  font-size: 10px;
+  color: #888;
+  margin-top: 5px;
+}
+
+widgetbalesin .msg-info-name {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+widgetbalesin .suggestion .sugg-options {
+  display: block;
+  background: #9c27b0;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+widgetbalesin .suggestion .sugg-title {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+widgetbalesin .suggestion span:last-child {
+  margin-bottom: 0;
+}
+/* Suggestions end */
+
+.resultDiv {
+  padding: 20px 10px 90px 10px;
+  overflow-y: auto;
+  height: 75%;
+}
+
+.resultDiv .card-title{
+  white-space: normal;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 0 10px;
+}
+
+.resultDiv .card-text{
+  white-space: normal;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+  widgetbalesin .resultDiv .userEnteredText,
+  widgetbalesin .resultDiv .botResult,
+  widgetbalesin .suggestion {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  widgetbalesin .chatCont,
+  widgetbalesin .chatForm {
+    width: 100%;
+  }
+  widgetbalesin .chatCont {
+    height: 92% !important;
+  }
+}
+/* widgetbalesin end */
